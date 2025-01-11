@@ -57,14 +57,14 @@ public class Main {
             int cy = y;
             int cx = x;
             for (int i = 0; i <size-1 ; i++) {
-                if (cy+dy[j]<0 || cy+dy[i]>=n) {
+                if (cy+dy[j]<0 || cy+dy[j]>=n) {
                     break;
                 }
                 cy = cy + dy[j];
                 arr[cy][x] = 0;
             }
             for (int i = 0; i <size-1 ; i++) {
-                if (cx+dx[j]<0 || cx+dx[i]>=n) {
+                if (cx+dx[j]<0 || cx+dx[j]>=n) {
                     break;
                 }
                 cx = cx + dx[j];
